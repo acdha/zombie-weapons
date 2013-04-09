@@ -21,7 +21,7 @@ try:
 except ImportError, e:
         sys.path.append('/srv/www/production/zombie-weapons')
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "zombie_weapons.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "zombie_weapons.site_settings")
 
 # This application object is used by any WSGI server configured to use this
 # file. This includes Django's development server, if the WSGI_APPLICATION

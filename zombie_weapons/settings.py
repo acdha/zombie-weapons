@@ -148,5 +148,3 @@ LOGGING = {
 
 HAYSTACK_SITECONF = 'weapons.search_sites'
 HAYSTACK_SEARCH_ENGINE = 'simple'
-
-from settings_local import *

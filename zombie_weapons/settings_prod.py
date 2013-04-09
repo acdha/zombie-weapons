@@ -1,5 +1,7 @@
 import os
 
+from zombie_weapons.settings import *
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -11,12 +13,12 @@ DATABASES = {
     }
 }
 
-current_path = '/srv/www/production/zombie-weapons'
+PROJECT_ROOT = '/srv/www/production/zombie-weapons'
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = os.path.join(current_path, '/weapons/static/images/')
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, '/weapons/static/images/')
 
 TEMPLATE_DIRS = (
-    os.path.join(current_path, 'templates')
+    os.path.join(PROJECT_ROOT, 'templates')
 )
